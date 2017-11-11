@@ -1,10 +1,14 @@
 {
   "name": "jwks-db",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Helper package to manage JWKS and persit to db",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josp70/jwks-db.git"
   },
   "keywords": [
     "jwks",
