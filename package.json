@@ -4,7 +4,8 @@
   "description": "Helper package to manage JWKS and persit to db",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   "author": "Jorge Suit <josp.jorge@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "eslint": "^4.11.0",
     "mocha": "^4.0.1"
   },
   "dependencies": {
