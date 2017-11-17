@@ -9,10 +9,13 @@ function initKeyStore() {
     return keystore.generate('RSA', RSA_1024);
 }
 
+let database = null;
+
 exports.connect = (db = null) => {
   if (db === null) {
     return initKeyStore().then(() => keystore);
   }
+  database = db;
   return db.collection('jwks').count()
     .then((cnt) => {
       if (cnt === 0) {
@@ -32,6 +35,8 @@ exports.connect = (db = null) => {
               }));
     });
 };
+
+exports.getDb = () => database;
 
 exports.get = () => keystore;
 
