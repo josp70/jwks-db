@@ -22,7 +22,8 @@ describe('GENERATE', () => {
   it('should recover back the payload', () =>
      jwksDb.generateJWS(payload)
      .then(jwksDb.verifyJWS)
-     .then((result) => assert.deepEqual(payload, result.payload, 'decoded payload does not match')));
+     .then((result) => assert.deepEqual(payload, result.payload,
+                                        'decoded payload does not match')));
 
   after('close db', () => jwksDb.getDb().close());
 });
