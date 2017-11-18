@@ -29,9 +29,13 @@ MongoClient.connect('mongodb://localhost:27017/msvc_user').then(db=>{
 });
 ```
 
+## Linting
+
+npm run lint
+
 ## Tests
 
-TBD
+npm test
 
 ## Contributing
 
