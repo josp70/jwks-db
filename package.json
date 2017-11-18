@@ -1,6 +1,6 @@
 {
   "name": "jwks-db",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Helper package to manage JWKS and persit to db",
   "main": "index.js",
   "scripts": {
